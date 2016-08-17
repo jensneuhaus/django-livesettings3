@@ -690,7 +690,7 @@ class StringValue(Value):
     def to_python(self, value):
         if value == NOTSET:
             value = ""
-        return str(value)
+        return unicode(value)
 
     to_editor = to_python
 
